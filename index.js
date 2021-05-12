@@ -59,7 +59,7 @@ app.get("/sum", async (req, res) => {
     };
     res.render("sum", {
         type: "get",
-        num: num
+        //num: num,
     });
 });
 
