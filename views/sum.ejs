@@ -1,0 +1,30 @@
+<%- include("_header") -%>
+
+<h1>Calculate Sum of a Series</h1>
+
+<!-- Starting # -->
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="starting">Enter Starting Number</label>
+    <div class="col-sm-2">
+      <input type="number" autofocus class="form-control" name="starting" id="starting" value="<%= num.starting%>" required/>
+      <td>(Required)</td>
+    </div>
+  </div>
+<!-- Ending #  -->
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="ending">Enter Ending Number</label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" name="ending" id="ending" value="<%= num.ending%>" required />
+      <td>(Required)</td>
+    </div>
+  </div>
+<!-- Increment  -->
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="increment">Enter Increment</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="increment" id="increment" value="<%= num.increment%>" required />
+      <td>(Required)</td>
+    </div>
+  </div>
+
+<%- include("_footer") -%>
